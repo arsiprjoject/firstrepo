@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/flebie_gray"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10px"
+                    android:layout_marginBottom="10px"
+                    card_view:cardBackgroundColor="@color/colorPrimary"
+                    card_view:cardCornerRadius="0dp"
+                    card_view:cardElevation="10dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <CalendarView
+                        android:id="@+id/monthView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:endYear="2020"
+                        android:startYear="2020"></CalendarView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:text="Update Working hours for"></TextView>
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="September 14th, Sunday"
+                android:textColor="@color/buttonClr"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal"
+                android:paddingLeft="20px"
+                android:paddingRight="20px">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timeSlot1"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="06:00-09:00"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteClr"
+                    android:padding="1dp"
+                    android:textSize="14dp"
+                    app:backgroundTint="@color/buttonClr" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timeSlot2"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="06:00-11:00"
+                    android:padding="1dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/buttonClr"
+                    app:backgroundTint="@color/whiteClr" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timeSlot3"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="06:00-14:00"
+                    android:padding="1dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/buttonClr"
+                    app:backgroundTint="@color/whiteClr" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:orientation="horizontal"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timeSlot4"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="14:00-18:00"
+                    android:padding="1dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/buttonClr"
+                    app:backgroundTint="@color/whiteClr" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/timeSlot5"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="06:00-18:00"
+                    android:padding="1dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/buttonClr"
+                    app:backgroundTint="@color/whiteClr" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="-------------OR-------------">
+
+            </TextView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/offDutyBtn"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="100px"
+                android:paddingRight="100px"
+                android:text="OFF DUTY"
+                android:textColor="#E04259"
+                app:strokeColor="#F0C7CA" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/updateAviBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Done"
+                android:textAllCaps="false"
+                android:theme="@style/Theme.MaterialComponents.Light"
+                app:backgroundTint="@color/buttonColor" />
+        </LinearLayout>
+    </ScrollView>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/updateAviBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Done"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:theme="@style/Theme.MaterialComponents.Light"-->
+<!--            app:backgroundTint="@color/buttonColor" />-->
+<!--    </LinearLayout>-->
+</RelativeLayout>

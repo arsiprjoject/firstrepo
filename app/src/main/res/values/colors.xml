@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#190329</color>
+    <color name="buttonColor">#39C4AC</color>
+    <color name="tab_background_selected">#7824AB</color>
+    <color name="tab_background_unselected">#FFFFFF</color>
+    <color name="flebie_gray">#f2f2f2</color>
+    <color name="buttonClr">#0095D6</color>
+    <color name="whiteClr">#FFFFFF</color>
+    <color name="grayText">#BDBDBD</color>
+    <color name="disableBtn">#C2C2C2</color>
+    <color name="drakGray">#707070</color>
+    <color name="redTxt">#E04259</color>
+    <color name="blackClr">#000000</color>
+</resources>

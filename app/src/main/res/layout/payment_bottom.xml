@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Payment Capture"
+                    android:textAlignment="center"
+                    android:textColor="@color/tab_background_selected"
+                    android:textSize="25sp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/closePayment"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_close_black_24dp">
+
+                </ImageView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="Payment Link sent. Upload Payment Confirmation Image"
+                android:textSize="16dp"></TextView>
+
+            <ImageView
+                android:id="@+id/qrCodeImg"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu_camera">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/cameraIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_border"
+                android:padding="5dp"
+                android:src="@drawable/ic_menu_camera"
+                android:tint="@color/buttonClr"></ImageView>
+
+<!--            <ImageView-->
+<!--                android:id="@+id/uploadPic"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:src="@drawable/ic_check_circle_black_24dp">-->
+
+<!--            </ImageView>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

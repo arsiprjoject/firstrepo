@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/collectAmout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="true"
+        android:inputType="number" />
+    <View
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+
+    </View>
+
+    <ImageView
+        android:id="@+id/saveBtn"
+        android:layout_gravity="right"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_check_circle_blue_24dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+
+    </ImageView>
+</LinearLayout>
