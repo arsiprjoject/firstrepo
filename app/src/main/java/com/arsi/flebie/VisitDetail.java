@@ -272,7 +272,7 @@ public class VisitDetail extends Fragment implements View.OnClickListener {
             if (patientOrder.getPatientServiceInfo() == null) {
                 CollectionBottom.collectionString = patientOrder.getOrderItemDtos()[0].getItemDetails();
             } else {
-                CollectionBottom.collectionString = patientOrder.getOrderItemDtos()[count].getPatientServiceInfo();
+                CollectionBottom.collectionString = patientOrder.getPatientServiceInfo();
             }
 
             labName.setText(patientOrder.getOrderItemDtos()[0].getItemProviderName());
